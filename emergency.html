@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency - Uttarakhand</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Few Important Contacts</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tourism.html">Tourism</a></li>
+                <li><a href="weather.html">Weather</a></li>
+                <li><a href="news.html">Live News</a></li>
+                <li><a href="map.html">Map</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <button class="accordion">Emergency Services</button>
+    <div class="panel">
+        <table>
+            <tr><th>Service</th><th>Contact</th></tr>
+            <tr><td>Police</td><td>100</td></tr>
+            <tr><td>Fire Brigade</td><td>101</td></tr>
+            <tr><td>Ambulance</td><td>108</td></tr>
+            <tr><td>Disaster Helpline</td><td>1070</td></tr>
+            <tr><td>Women Helpline</td><td>1091</td></tr>
+            <tr><td>Child Helpline</td><td>1098</td></tr>
+        </table>
+    </div>
+
+    <button class="accordion">Health Services</button>
+    <div class="panel">
+        <table>
+            <tr><th>Hospital</th><th>Contact</th></tr>
+            <tr><td>Doon Hospital</td><td>+91 135 2659356</td></tr>
+            <tr><td>Max Super Specialty Hospital</td><td>+91 135 6673000</td></tr>
+            <tr><td>Shri Mahant Indresh Hospital</td><td>+91 135 6672400</td></tr>
+            <tr><td>Synergy Institute of Medical Sciences</td><td>+91 135 2607722</td></tr>
+        </table>
+    </div>
+
+    <button class="accordion">Transport Services</button>
+    <div class="panel">
+        <table>
+            <tr><th>Service</th><th>Contact</th></tr>
+            <tr><td>Railway Station Enquiry</td><td>+91 135 2622131</td></tr>
+            <tr><td>ISBT Dehradun</td><td>+91 135 2642015</td></tr>
+            <tr><td>Jolly Grant Airport</td><td>+91 135 2412052</td></tr>
+            <tr><td>Taxi Services</td><td>+91 9997550077</td></tr>
+        </table>
+    </div>
+    <button class="accordion">Utilities</button>
+    <div class="panel">
+        <table>
+            <tr><th>Service</th><th>Contact</th></tr>
+            <tr><td>Electricity Helpline (UPCL)</td><td>1912</td></tr>
+            <tr><td>Water Supply Helpline (Uttarakhand Jal Sansthan)</td><td>1800-180-4100</td></tr>
+            <tr><td>Gas Booking (Indian Oil)</td><td>1906</td></tr>
+        </table>
+    </div>
+    <button class="accordion">Government Offices</button>
+    <div class="panel">
+        <table>
+            <tr><th>Service</th><th>Contact</th></tr>
+            <tr><td>Municipal Corporation Dehradun</td><td>0135-2628700</td></tr>
+            <tr><td>District Magistrate Office</td><td> 0135-2623023</td></tr>
+            <tr><td>Regional Transport Office (RTO) Dehradun</td><td>0135-2626466</td></tr>
+        </table>
+    </div>
+    <button class="accordion">Tourism and Travel</button>
+    <div class="panel">
+        <table>
+            <tr><th>Service</th><th>Contact</th></tr>
+            <tr><td>Uttarakhand Tourism Information Centre</td><td>0135-2559898</td></tr>
+            <tr><td>Forest Research Institute (FRI)</td><td>0135-2755277</td></tr>
+            <tr><td>Mussoorie Tourism Office</td><td>0135-2632864</td></tr>
+        </table>
+    </div>
+    <button class="accordion">Education</button>
+    <div class="panel">
+        <table>
+            <tr><th>Service</th><th>Contact</th></tr>
+            <tr><td>Indian Institute of Technology Roorkee</td><td>0135-2524100</td></tr>
+            <tr><td>Wadia Institute of Himalayan Geology</td><td>0135-2525400</td></tr>
+            <tr><td>Doon University</td><td>0135-2533105</td></tr>
+            <tr><td>Graphic Era University </td><td>1800 270 1280</td></tr>
+        </table>
+    </div>
+    <button class="accordion">Helplines</button>
+    <div class="panel">
+        <table>
+            <tr><th>Service</th><th>Contact</th></tr>
+            <tr><td>COVID-19 Helpline</td><td>0135-2726066</td></tr>
+            <tr><td>AIDS Helpline</td><td>1097</td></tr>
+            <tr><td>Senior Citizens Helpline</td><td>14567</td></tr>
+            <tr><td>Mental Health Helpline (AASRA)</td><td>9820466726</td></tr>
+        </table>
+    </div>
+    <button class="accordion">Miscellaneous</button>
+    <div class="panel">
+        <table>
+            <tr><th>Service</th><th>Contact</th></tr>
+            <tr><td>Animal Helpline (PFA Dehradun)</td><td>9219444444</td></tr>
+            <tr><td>Courier Services (Blue Dart)</td><td>0135-2658878</td></tr>
+            <tr><td>Local News Helpline</td><td>0135-2712172</td></tr>
+        </table>
+    </div>
+    <script>
+        const accordions = document.querySelectorAll(".accordion");
+        accordions.forEach(accordion => {
+            accordion.addEventListener("click", () => {
+                accordion.classList.toggle("active");
+                const panel = accordion.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        });
+    </script>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer Brand and Description -->
+            <div class="footer-brand">
+                <img src="./logo_no_background.png" alt="UttaraXplore Logo" class="footer-logo">
+                <p class="footer-description">Your one-stop destination for live weather updates, the latest news, top tourist spots, and emergency contacts in Uttarakhand – everything you need to plan the perfect trip to this stunning state</p>
+            </div>
+    
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./weather.html" target="_blank">Weather</a></li>
+                    <li><a href="./tourism.html" target="_blank">Tourism</a></li>
+                    <li><a href="./news.html" target="_blank">News</a></li>
+                    <li><a href="./map.html" target="_blank">Map</a></li>
+                    <li><a href="./emergency.html" target="_blank">Contacts</a></li>
+                    <li><a href="./faq.html" target="_blank">FAQs</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contact Section -->
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-phone"></i>+91 92165 07431</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:support@UttaraXplore.com">support@UttaraXplore.com</a></p>
+                <div class="social-icons">
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/uktourismonline/" target="_blank" class="social-icon">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="social-img">
+                    </a>
+                    
+                    <!-- Twitter -->
+                    <a href="https://x.com/uktraveltourism" target="_blank" class="social-icon">
+                        <img src="https://static.vecteezy.com/system/resources/previews/027/395/710/non_2x/twitter-brand-new-logo-3-d-with-new-x-shaped-graphic-of-the-world-s-most-popular-social-media-free-png.png" alt="Twitter" class="social-img">
+                    </a>
+                    
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/uttarakhand_tourismofficial/" target="_blank" class="social-icon">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-img">
+                    </a>
+    
+                    <a href="https://www.linkedin.com/company/uttarakhand-tourism-development-board/" target="_blank" class="social-icon">
+                        <img src="https://th.bing.com/th/id/OIP.dWD4vnzCqbT2DNrObhzjoQHaHk?w=167&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Twitter" class="social-img">
+                    </a>
+    
+                </div>
+            </div>            
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 UttaraXplore. All rights reserved.</p>
+        </div>
+</body>
+</html>
